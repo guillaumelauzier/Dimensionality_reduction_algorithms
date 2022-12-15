@@ -60,4 +60,24 @@ int main() {
 
   // Perform t-SNE on the input data
   MatrixXd X_tsne = tsne(X);
-  std
+  std int 
+    
+main() {    
+// Define a matrix of input data
+MatrixXd X(5, 3);
+X << 1, 2, 3,
+2, 3, 4,
+3, 4, 5,
+4, 5, 6,
+5, 6, 7;
+
+// Perform PCA on the input data
+MatrixXd X_pca = pca(X);
+std::cout << "PCA output:\n" << X_pca << std::endl;
+
+// Perform t-SNE on the input data
+MatrixXd X_tsne = tsne(X);
+std::cout << "t-SNE output:\n" << X_tsne << std::endl;
+
+return 0;
+}
